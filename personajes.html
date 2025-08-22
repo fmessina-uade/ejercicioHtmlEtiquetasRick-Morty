@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rick & Morty - Personajes</title>
+  <meta name="description" content="Sección de personajes de Rick & Morty" />
+  <link rel="icon" href="/img/favicon.avif" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header> <!-- Obligatorio -->
+    <img src="img/Rick_and_Morty.png" alt="logo Rick & Morty" style="height: 100px"/>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="capitulos.html">Capitulos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido"> <!-- Obligatorio -->
+    <section id="intro-personajes">
+      <h2>Personajes</h2>
+      <p><p>En esta sección exploramos a los personajes principales e icónicos de <em>Rick & Morty</em>. Verás fichas claras con sus rasgos, relaciones y evolución a lo largo de la serie y sin spoilers.</p></p>
+    </section>
+    <section>
+      <h2>Personajes Principales</h2>
+      <ul>
+        <li><strong><a href="#Rick">Rick Sanchez</a></strong></li>
+        <li><strong><a href="#Morty">Morty Smith</a></strong></li>
+        <li><strong><a href="#Summer">Summer Smith</a></strong></li>
+        <li><strong><a href="#Beth">Beth Smith</a></strong></li>
+        <li><strong><a href="#Jerry">Jerry Smith</a></strong></li>
+      </ul>
+    </section>
+    <span>
+      <section>
+        <h3 id="Rick">Rick Sanchez</h3>
+        <img src="/img/Rick_Sanchez.webp" alt="Rick Sanchez" style="height: 350px"/>
+        <p><strong>Descripción: </strong>Científico loco, abuelo de Morty, conocido por su inteligencia y comportamiento errático.</p>
+        <span></span>
+        <h3 id="Morty">Morty Smith</h3>
+        <img src="/img/Morty.jpg" alt="Morty Smith" style="height: 350px"/>
+        <p><strong>Descripción: </strong>de Rick, un adolescente inseguro que a menudo se ve arrastrado a las aventuras de su abuelo.</p>
+        <span></span>
+        <h3 id="Summer">Summer Smith</h3>
+        <img src="/img/Summer_Smith.png" alt="Summer Smith" style="height: 350px"/>
+        <p><strong>Descripción: </strong>Hermana mayor de Morty, una adolescente popular y segura de sí misma.</p>
+        <span></span>
+        <h3 id="Beth">Beth Smith</h3>
+        <img src="/img/Beth_Smith.png" alt="Beth Smith" style="height: 350px"/>
+        <p><strong>Descripción: </strong>Madre de Morty y Summer, veterinaria de caballos y esposa de Jerry.</p>
+        <span></span>
+        <h3 id="Jerry">Jerry Smith</h3>
+        <img src="/img/Jerry_Smith_(Rick_and_Morty).png" alt="Jerry Smith" style="height: 350px"/>
+        <p><strong>Descripción: </strong>Padre de Morty y Summer, a menudo inseguro y dependiente de Beth.</p>
+      </section>
+    </span>
+    
+  </main>
+
+  <footer> <!-- Obligatorio -->
+    <small>© <span id="year"></span> Copyright Facundo Messina - UADE</small>
+  </footer>
+
+  <script defer>
+    // Ejemplo: actualizar el año del footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="app.js" defer></script>
+</body>
+</html>

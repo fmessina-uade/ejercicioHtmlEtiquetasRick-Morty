@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rick & Morty - Capítulos</title>
+  <meta name="description" content="Sección de capítulos de Rick & Morty" />
+  <link rel="icon" href="/img/favicon.avif" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header> <!-- Obligatorio -->
+    <img src="img/Rick_and_Morty.png" alt="logo Rick & Morty" style="height: 100px"/>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="capitulos.html">Capitulos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido"> <!-- Obligatorio -->
+    <section id="inicio">
+      <h2>Capítulos</h2>
+      <p>Explorá los capítulos más recordados de <em>Rick & Morty</em> con una breve introducción y trailers oficiales seleccionados. Contenido apto para todo público y sin spoilers pesados.</p>
+    </section>
+    <section>
+      <h2>Momentos Destacados</h2>
+      <ul>
+        <li><a href="#Intro"><strong>Intro</strong></a></li>
+        <li><a href="#Cap1"><strong>Temporada 1, Episodio 1: "Pilot"</strong></a></li>
+        <li><a href="#Cap4"><strong>Temporada 2, Episodio 4: "Total Rickall"</strong></a></li>
+      </ul>
+    <img src="img/rickymortybyn.png" alt="Descripción de la imagen" style="height: 100px;"/>
+    <!-- Falta agregar videos en intro, uno o dos caps mas -->
+      <section>
+        <h3 id="Intro">Intro</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/E6TUs69Cw94?si=t6m9WP6qL8dhcdDn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <p><strong>Detalle: </strong>Canción de inicio de la serie</p>
+        <h3 id="Cap1">Temporada 1, Episodio 1: "Pilot"</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MPIsa3_IqKc?si=clNw-35aie3eGCdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p><strong>Detalle: </strong>Introducción a Rick y Morty y su primera aventura juntos.</p>
+        <h3 id="Cap4">Temporada 2, Episodio 4: "Total Rickall"</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nTAQimLSQgA?si=KSV1G1Yk1I_7QsCP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         <p><strong>Detalle: </strong>La familia enfrenta una invasión de parásitos que crean recuerdos falsos.</p>
+      </section>
+    </span>
+  </main>
+
+  <footer> <!-- Obligatorio -->
+    <small>© <span id="year"></span> Copyright Facundo Messina - UADE</small>
+  </footer>
+
+  <script defer>
+    // Ejemplo: actualizar el año del footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="app.js" defer></script>
+</body>
+</html>
